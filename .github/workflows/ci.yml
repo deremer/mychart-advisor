@@ -1,0 +1,64 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      evals:
+        description: Run model-graded plugin evals (costs API credits)
+        type: boolean
+        default: false
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install poppler
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Install dev dependencies
+        run: pip install -r requirements-dev.txt
+      - name: No real case data in the tree
+        run: scripts/dev/check-no-case-data.sh --all
+      - name: Fixtures match the generator
+        run: |
+          python tests/fixtures/generate.py
+          git diff --exit-code -- tests/fixtures
+      - name: Unit tests
+        run: pytest -q
+      - name: Scripts run under python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - run: |
+          python -m pip install pdfplumber pytest reportlab
+          python -m pytest -q tests/test_extract.py tests/test_scaffold.py
+
+  evals:
+    if: github.event_name == 'workflow_dispatch' && inputs.evals
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install poppler and sandbox prerequisites
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils bubblewrap socat
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+      - name: Run evals
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: >
+          claude plugin eval . --trust-plugin --scaffold --no-publish
+          --allow-tools Write Edit "Bash(python3 *)"
+          --judge-model claude-sonnet-5 --threshold 0.8 --max-cost-usd 25
+          --json eval-results.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-results
+          path: eval-results.json

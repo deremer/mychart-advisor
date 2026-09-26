@@ -1,0 +1,17 @@
+{
+  "name": "mychart-advisor",
+  "interface": {
+    "displayName": "mychart-advisor"
+  },
+  "plugins": [
+    {
+      "name": "mychart-advisor",
+      "source": { "source": "local", "path": "./" },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Health"
+    }
+  ]
+}

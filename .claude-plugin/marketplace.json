@@ -1,0 +1,20 @@
+{
+  "name": "mychart-advisor",
+  "owner": {
+    "name": "David DeRemer",
+    "url": "https://github.com/deremer"
+  },
+  "metadata": {
+    "description": "Patient and family advocacy skills for exported patient-portal records."
+  },
+  "plugins": [
+    {
+      "name": "mychart-advisor",
+      "source": "./",
+      "description": "Organize portal records, understand results, explore the differential, and prepare questions for the care team. Does not diagnose or direct care.",
+      "version": "0.1.0",
+      "license": "MIT",
+      "homepage": "https://github.com/deremer/mychart-advisor"
+    }
+  ]
+}
