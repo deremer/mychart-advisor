@@ -1,0 +1,407 @@
+{
+  "labs": [
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Sodium",
+      "value": "136"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Potassium",
+      "value": "4.1"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Chloride",
+      "value": "101"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "CO2",
+      "value": "24"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "BUN",
+      "value": "18"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Creatinine",
+      "value": "0.92"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Glucose",
+      "value": "104"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Calcium, Total",
+      "value": "9.1"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Albumin",
+      "value": "3.4"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Bilirubin, Total",
+      "value": "3.8"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "Alkaline Phosphatase",
+      "value": "162"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "AST",
+      "value": "842"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel.pdf",
+      "analyte": "ALT",
+      "value": "1120"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Sodium",
+      "value": "137"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Potassium",
+      "value": "4.0"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Chloride",
+      "value": "102"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "CO2",
+      "value": "23"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "BUN",
+      "value": "17"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Creatinine",
+      "value": "0.88"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Glucose",
+      "value": "98"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Calcium, Total",
+      "value": "8.9"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Albumin",
+      "value": "3.2"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Bilirubin, Total",
+      "value": "4.6"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "Alkaline Phosphatase",
+      "value": "171"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "AST",
+      "value": "690"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 2.pdf",
+      "analyte": "ALT",
+      "value": "980"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Sodium",
+      "value": "135"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Potassium",
+      "value": "3.8"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Chloride",
+      "value": "101"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "CO2",
+      "value": "23"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "BUN",
+      "value": "15"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Creatinine",
+      "value": "0.85"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Glucose",
+      "value": "92"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Calcium, Total",
+      "value": "8.8"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Albumin",
+      "value": "3.1"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Bilirubin, Total",
+      "value": "5.9"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "Alkaline Phosphatase",
+      "value": "180"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "AST",
+      "value": "512"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 3.pdf",
+      "analyte": "ALT",
+      "value": "845"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Sodium",
+      "value": "134"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Potassium",
+      "value": "3.6"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Chloride",
+      "value": "100"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "CO2",
+      "value": "22"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "BUN",
+      "value": "14"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Creatinine",
+      "value": "0.83"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Glucose",
+      "value": "88"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Calcium, Total",
+      "value": "8.7"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Albumin",
+      "value": "2.9"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Bilirubin, Total",
+      "value": "7.2"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "Alkaline Phosphatase",
+      "value": "188"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "AST",
+      "value": "401"
+    },
+    {
+      "file": "Comprehensive Metabolic Panel 4.pdf",
+      "analyte": "ALT",
+      "value": "702"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "WBC",
+      "value": "7.2"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "Hemoglobin",
+      "value": "12.1"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "Hematocrit",
+      "value": "36.0"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "Platelet Count",
+      "value": "142"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "MCV",
+      "value": "91"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "RDW-CV",
+      "value": "14.9"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.PDF",
+      "analyte": "WBC",
+      "value": "6.8"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.PDF",
+      "analyte": "Hemoglobin",
+      "value": "11.6"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.PDF",
+      "analyte": "Hematocrit",
+      "value": "34.8"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.PDF",
+      "analyte": "Platelet Count",
+      "value": "118"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.PDF",
+      "analyte": "MCV",
+      "value": "92"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.PDF",
+      "analyte": "RDW-CV",
+      "value": "15.2"
+    },
+    {
+      "file": "Prothrombin Time and INR.pdf",
+      "analyte": "PT Sec",
+      "value": "15.8"
+    },
+    {
+      "file": "Prothrombin Time and INR.pdf",
+      "analyte": "INR",
+      "value": "1.4"
+    },
+    {
+      "file": "Prothrombin Time and INR 2.pdf",
+      "analyte": "PT Sec",
+      "value": "18.9"
+    },
+    {
+      "file": "Prothrombin Time and INR 2.pdf",
+      "analyte": "INR",
+      "value": "1.7"
+    },
+    {
+      "file": "Acetaminophen Level.pdf",
+      "analyte": "Acetaminophen",
+      "value": "<10"
+    },
+    {
+      "file": "Lipase.pdf",
+      "analyte": "Lipase",
+      "value": "38"
+    },
+    {
+      "file": "Lactate.pdf",
+      "analyte": "Lactate",
+      "value": "1.4"
+    },
+    {
+      "file": "Ammonia.pdf",
+      "analyte": "Ammonia",
+      "value": "68"
+    },
+    {
+      "file": "Immunoglobulin G.pdf",
+      "analyte": "Immunoglobulin G",
+      "value": "1890"
+    },
+    {
+      "file": "Miscellaneous Send Out Test.pdf",
+      "analyte": "F-Actin (Smooth Muscle) Antibody, IgG",
+      "value": "38"
+    }
+  ],
+  "traps": {
+    "uppercase_extension": "Complete Blood Count with Differential 2.PDF",
+    "compromised_specimen": "Hepatitis C RNA, Quantitative PCR.pdf",
+    "oddly_named_test": "Miscellaneous Send Out Test.pdf",
+    "empty_result": "Ceruloplasmin.pdf",
+    "disagreeing_imaging": [
+      "US Abdomen Complete with Doppler.pdf",
+      "CT Abdomen Pelvis with IV Contrast.pdf"
+    ],
+    "non_independent_confirmation": "US Abdomen Complete with Doppler.pdf (addendum 3/4 4:12 PM)",
+    "high_stakes_low_probability": "hepatic venous outflow obstruction",
+    "copy_forward_exam": "Progress Notes say 'No asterixis', PT evaluation 3/5 documents bilateral asterixis",
+    "leading_space_filename": " Progress Notes by Dana Placeholder, MD at 3-6-2025 9-05 AM.pdf",
+    "unabsorbed_result": "Miscellaneous Send Out Test.pdf resulted after last note says pending",
+    "prior_contradicted": [
+      "bilirubin trending down (records show 3.8 -> 4.6 -> 5.9 -> 7.2)",
+      "two separate ultrasounds (one ultrasound plus a non-independent addendum)",
+      "autoimmune testing all negative (smooth muscle antibody 38 High, IgG 1890 High)"
+    ]
+  },
+  "counts": {
+    "results": 21,
+    "notes": 12
+  },
+  "identifiers": [
+    "Alex Fixture",
+    "2/14/1963",
+    "99900001",
+    "Example General Hospital",
+    "Dana Placeholder",
+    "Morgan Examplename"
+  ],
+  "family_report_unshared_history": "daily ibuprofen before admission"
+}

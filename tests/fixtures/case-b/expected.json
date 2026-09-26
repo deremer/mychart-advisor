@@ -1,0 +1,93 @@
+{
+  "labs": [
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "WBC",
+      "value": "16.8"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "Hemoglobin",
+      "value": "13.9"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "Platelet Count",
+      "value": "265"
+    },
+    {
+      "file": "Complete Blood Count with Differential.pdf",
+      "analyte": "Abs Neut",
+      "value": "14.1"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.pdf",
+      "analyte": "WBC",
+      "value": "11.2"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.pdf",
+      "analyte": "Hemoglobin",
+      "value": "13.4"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.pdf",
+      "analyte": "Platelet Count",
+      "value": "281"
+    },
+    {
+      "file": "Complete Blood Count with Differential 2.pdf",
+      "analyte": "Abs Neut",
+      "value": "8.6"
+    },
+    {
+      "file": "Complete Blood Count with Differential 3.pdf",
+      "analyte": "WBC",
+      "value": "8.1"
+    },
+    {
+      "file": "Complete Blood Count with Differential 3.pdf",
+      "analyte": "Hemoglobin",
+      "value": "13.2"
+    },
+    {
+      "file": "Complete Blood Count with Differential 3.pdf",
+      "analyte": "Platelet Count",
+      "value": "302"
+    },
+    {
+      "file": "Complete Blood Count with Differential 3.pdf",
+      "analyte": "Abs Neut",
+      "value": "5.4"
+    },
+    {
+      "file": "C-Reactive Protein.pdf",
+      "analyte": "CRP",
+      "value": "182"
+    },
+    {
+      "file": "C-Reactive Protein 2.pdf",
+      "analyte": "CRP",
+      "value": "41"
+    },
+    {
+      "file": "Procalcitonin.pdf",
+      "analyte": "Procalcitonin",
+      "value": "2.4"
+    }
+  ],
+  "traps": {
+    "team_is_right": "pneumococcal community-acquired pneumonia, improving on therapy"
+  },
+  "counts": {
+    "results": 10,
+    "notes": 5
+  },
+  "identifiers": [
+    "Robin Sample",
+    "7/9/1979",
+    "99900002",
+    "Example Community Hospital",
+    "Lee Testperson"
+  ]
+}
