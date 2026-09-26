@@ -91,7 +91,7 @@ Finish with the three things you would tell the panel if you had one minute. Sta
 
 ## 5. Synthesizer and the conference note
 
-Write `conference-note.md` from every seat file and `investigator.md`. Do not add analysis the seats did not make, except to reconcile. Plain sentences. Under 2,000 words. Sections:
+Write `conference-note.md` from every seat file and `investigator.md`. Do not add analysis the seats did not make, except to reconcile. Plain sentences. Under 2,000 words, not counting the differential table, sources, and record block. Count before finishing. If over, shorten sections 3, 7, 8, and 10 first, and never cut a possibility from the differential to save words. Sections:
 
 1. **The state of the case**, one paragraph.
 2. **Ranked differential**, as a table: possibility, how each seat ranked it, probability, stakes, evidence for, evidence against, the settling test, and whether that test is in the folder, pending, or never mentioned. Flag high-stakes items even when they are unlikely.

@@ -142,7 +142,7 @@ Rows record the true metadata for any note whose file name does not match its co
 
 ## analysis/changes/<YYYY-MM-DD>.md
 
-One note per meaningful new input: an ingest, an observation entry that changes the picture, an intake amendment, a finished conference, or a consult. If one already exists for today, add `-2`, `-3`. Each note runs 300 words or fewer, is cited, and reads on a phone. The first line names what triggered it.
+One note per meaningful new input: an ingest, an observation entry that changes the picture, an intake amendment, a finished conference, or a consult. If one already exists for today, add a suffix: `-2`, `-3`, or a short slug such as `-conference`. Each note runs 300 words or fewer, is cited, and reads on a phone. The first line names what triggered it.
 
 ## .advisor/identifiers.txt
 
