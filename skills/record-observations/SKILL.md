@@ -42,7 +42,7 @@ Start open: "What have you noticed or been told since the last entry?" Let them 
 - What any doctor, nurse, or therapist said, and who said it
 - What was planned or promised, such as a test, a result, or a visit, and whether it happened
 
-For each item, get when (date and approximate time), who observed or who said it, and exactly what, in their words. Use numbers when the family has them: a reading on a home device, how many steps, how much of a meal. Do not turn a description into a clinical term. "Hands flapped when he held them out" stays as said.
+For each item, get when (date and approximate time), who observed or who said it, and exactly what, in their words. Use numbers when the family has them: a reading on a home device, how many steps, how much of a meal. Do not turn a description into a clinical term. "Her words came out jumbled for a minute" stays as said.
 
 Keep observation and interpretation apart. If the family adds a theory, record it on a separate "Family's thoughts" line.
 
@@ -83,6 +83,6 @@ Log each conflict in `analysis/recap-discrepancies.md` under "Notes versus resul
 
 If the entry changes the picture, write a change note in `analysis/changes/` per the format in `AGENTS.md`, lead with the observation, and say which possibilities or open questions it bears on and how. Examples: a new symptom, a change that followed a medication, a conflict with the chart on something that matters, or news of a plan or result.
 
-Generating possibilities here is expected. "New confusion with a rising ammonia is consistent with hepatic encephalopathy. Ask whether that is the team's reading" is the right register. If the observation plausibly bears on something time-sensitive, say so at the top and suggest raising it with the care team today.
+Generating possibilities here is expected. "New swelling in one calf after several days in bed is consistent with a clot in the leg. Ask whether an ultrasound is planned" is the right register. If the observation plausibly bears on something time-sensitive, say so at the top and suggest raising it with the care team today.
 
 Add a line to the Update log in `AGENTS.md`. If this skill ran as step 0 of `ingest-results`, hand back to it.
