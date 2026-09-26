@@ -31,7 +31,7 @@ class Doc:
     """A minimal page writer: one header per page, lines flow down, pages break automatically."""
 
     def __init__(self, path, header):
-        self.c = canvas.Canvas(path, pagesize=letter)
+        self.c = canvas.Canvas(path, pagesize=letter, invariant=1)
         self.header = header
         self.y = 0
         self._new_page()
