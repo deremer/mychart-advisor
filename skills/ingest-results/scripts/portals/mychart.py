@@ -3,7 +3,7 @@
 Result PDFs ("Test Details"): a header line with name, DOB, and MRN, a "Collected on" specimen time, a
 "Result date", then one block per analyte: the analyte name, a "Normal range:" or "Normal value:" line,
 the value with an optional flag, and a row of axis tick labels that text extraction renders with every
-character doubled ("33..77" is 3.7). Some panels print two columns of analytes side by side.
+character doubled ("44..22" is 4.2). Some panels print two columns of analytes side by side.
 
 Note PDFs are named "<Note type> by <Author>, <Cred> at <M/D/YYYY> <h-mm AM>.pdf". macOS shows "/" in file
 names as ":", and some downloads use "-". Some names drop the comma before the credential or the dash in
@@ -162,10 +162,28 @@ def parse_labs(pdf, text):
         return [], ""
     two = is_two_column(pdf)
     if two is None:
-        # Without pdfplumber a two-column page cannot be split reliably. Parse only if single column is plausible.
-        rows = parse_single_column(text)
+        # No pdfplumber. Layout text from pdftotext keeps columns aligned, so split it by character offset.
+        rows = parse_text_columns(text)
         return rows, "" if rows else "pdfplumber missing, lab values not parsed"
     return (parse_two_column(pdf) if two else parse_single_column(text)), ""
+
+
+def parse_text_columns(text):
+    """Parse layout-preserved text, splitting two-column pages at the right column's character offset."""
+    rows = []
+    for page_no, page in enumerate(text.split("\f"), 1):
+        offsets = [m.start() for ln in page.splitlines() for m in re.finditer(r"Normal (?:range|value):", ln)
+                   if m.start() > 20]
+        if offsets:
+            col = min(offsets)
+            left = "\n".join(ln[:col].rstrip() for ln in page.splitlines())
+            right = "\n".join(ln[col:] for ln in page.splitlines())
+            parts = [left, right]
+        else:
+            parts = [page]
+        for part in parts:
+            rows += [(n, v, f, r, page_no) for n, v, f, r, _ in parse_single_column(part)]
+    return rows
 
 
 # ------------------------------------------------------------------------------------------------ notes

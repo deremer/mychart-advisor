@@ -166,3 +166,19 @@ def test_tick_rows_are_never_values():
     assert mychart.parse_single_column(text) == [("Sodium", "131", "Low", "136 - 145 mmol/L", 1)]
     text = "Sodium\nNormal range: 136 - 145 mmol/L\n113366 114455\n"
     assert mychart.parse_single_column(text) == []
+
+
+@pytest.mark.skipif(not shutil.which("pdftotext"), reason="needs poppler")
+@pytest.mark.parametrize("case", ["case-a", "case-b"])
+def test_text_column_fallback_without_pdfplumber(case):
+    """With pdftotext but no pdfplumber, two-column panels are split by character offset."""
+    with open(os.path.join(FIXTURES, case, "expected.json")) as fh:
+        expected = json.load(fh)["labs"]
+    got = set()
+    folder = os.path.join(FIXTURES, case, "Test Results")
+    for name in os.listdir(folder):
+        text = subprocess.run(["pdftotext", "-layout", os.path.join(folder, name), "-"],
+                              capture_output=True, text=True).stdout
+        if mychart.has_labs(text):
+            got |= {(name, n, v) for n, v, *_ in mychart.parse_text_columns(text)}
+    assert got == {(e["file"], e["analyte"], e["value"]) for e in expected}

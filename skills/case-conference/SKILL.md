@@ -93,6 +93,6 @@ Then write a change note in `analysis/changes/` summarizing what the conference 
 ## Notes
 
 - Run a conference when something material changes, not daily.
-- In Claude Code, the optional workflow `workflows/case-conference.js` runs the same pipeline through the Workflow tool, for users who opted into multi-agent workflows. The steps above need no extra permission and are the default.
+- In Claude Code, the optional workflow `workflows/conference-pipeline.js` (`/mychart-advisor:conference-pipeline`) runs the same pipeline through the Workflow tool, for users who opted into multi-agent workflows. The steps above need no extra permission and are the default.
 - Seats and the investigator write only inside `analysis/conference/<date>/`.
 - The evidence researcher searches general clinical terms only. Before any web query, check that it contains no string from `.advisor/identifiers.txt`.

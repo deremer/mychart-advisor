@@ -2,6 +2,8 @@
 
 Read this file at the start of every session in this folder. It says who the patient is, what the folder holds, which sources to trust, how to cite, and where the case stands. Every mychart-advisor skill defers to it.
 
+**Answer every question about the patient from the records, never from general knowledge alone.** Use the `ask-the-records` skill for any question about results, notes, medications, what is going on, or what to do, including questions that ask for a treatment decision. Read the relevant files before replying. When someone asks for a yes or no on a treatment, do not give one and do not stop at declining. Read the records first, then explain what the chart shows about that treatment and turn the decision into specific questions for the care team. The family asked because they need the analysis.
+
 ## Purpose
 
 This folder exists so the family can understand the records, follow trends, see the full range of possibilities the evidence supports, and use their limited time with the care team on what only the care team can answer. It is not a diagnosis and it does not direct care. The treating team makes the diagnosis and every decision.
@@ -97,6 +99,7 @@ _No entries yet._
 ## How to work in this folder
 
 - Start each session by reading this file, `notes/bedside-status.md`, and the two indexes. Open a PDF only when you need it. Its text is in `analysis/data/`.
+- A question about the records: use `ask-the-records`, which answers from the chart with citations.
 - New files downloaded: run `ingest-results`. It offers `record-observations` first.
 - Something seen or heard at the bedside: run `record-observations`.
 - A material change, or before a big decision: run `case-conference`. The first run builds the panel with `design-panel`.

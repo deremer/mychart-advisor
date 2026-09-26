@@ -18,6 +18,7 @@ Keep the file names the portal gives you. Duplicates are fine, and the tools sor
 
 | When | Say |
 |---|---|
+| You have a question about a result, a note, or what is going on | Just ask. "What does the CT mean?" "Is her kidney function getting worse?" |
 | You downloaded new files | "Ingest the new results." |
 | You noticed something at the bedside, or a doctor told you something | "Record an observation." |
 | Something big changed, or a decision is coming | "Run a case conference." |

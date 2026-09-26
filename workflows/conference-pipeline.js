@@ -1,5 +1,5 @@
 export const meta = {
-  name: 'case-conference',
+  name: 'conference-pipeline',
   description: 'mychart-advisor case conference: panel seats in parallel, investigator, synthesizer, second reader',
   whenToUse: 'Only from the case-conference skill, for users who opted into multi-agent workflows. Pass args {caseDir, date, mode, seats: [slug...]}.',
   phases: [

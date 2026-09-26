@@ -7,8 +7,8 @@ import pytest
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILLS = os.path.join(ROOT, "skills")
 GUARDRAILS = os.path.join(SKILLS, "case-setup", "assets", "guardrails.md")
-EXPECTED = ["case-setup", "patient-intake", "record-observations", "ingest-results", "design-panel",
-            "case-conference", "prep-questions", "independent-consult"]
+EXPECTED = ["case-setup", "patient-intake", "record-observations", "ingest-results", "ask-the-records",
+            "design-panel", "case-conference", "prep-questions", "independent-consult"]
 NAMES = sorted(d for d in os.listdir(SKILLS) if os.path.isfile(os.path.join(SKILLS, d, "SKILL.md")))
 
 
@@ -35,7 +35,7 @@ def unquote(v):
 
 
 def test_all_expected_skills_exist():
-    assert set(NAMES) >= set(EXPECTED[: len(NAMES)]) or NAMES, NAMES
+    assert sorted(NAMES) == sorted(EXPECTED)
 
 
 @pytest.mark.parametrize("name", NAMES)

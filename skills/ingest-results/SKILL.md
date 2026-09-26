@@ -2,7 +2,7 @@
 name: ingest-results
 description: "Ingests newly downloaded patient-portal PDFs (test results, care team notes, and other records from Epic MyChart or another portal) into a case folder. Extracts the text, rebuilds lab trend tables as CSV and markdown, updates the results and notes indexes, the running summaries, and the discrepancy log, refreshes where the case stands, and writes a short what-changed note the family can read on a phone. Offers to record bedside observations first. Use when someone says \"ingest\", \"new results\", \"new notes\", \"I downloaded more files\", \"update the labs\", \"what changed\", or \"refresh the case\"."
 license: MIT
-compatibility: Python 3.10+ with pdfplumber (declared inline, so `uv run` installs it). Optional poppler pdftotext for faster, column-faithful text. Any agent that can run commands and edit files.
+compatibility: Python 3.10+ plus either poppler (pdftotext) or pdfplumber. pdfplumber is declared inline, so `uv run` installs it. Any agent that can run commands and edit files.
 metadata:
   plugin: mychart-advisor
 ---
@@ -39,7 +39,7 @@ uv run "${CLAUDE_SKILL_DIR}/scripts/extract_notes.py"
 uv run "${CLAUDE_SKILL_DIR}/scripts/extract_other.py"
 ```
 
-If neither `uv` nor `pdfplumber` is available, ask the user before installing anything. The options are `pip install pdfplumber` into a virtual environment, or installing poppler for `pdftotext`. `extract_other.py` exits with code 2 when there is no `Other Records/` folder. That is normal.
+Either poppler's `pdftotext` or the `pdfplumber` package is enough. If `python3` exits with code 3, neither is present. Ask the user before installing anything. The options are installing poppler, for example `brew install poppler` or `apt install poppler-utils`, or `pip install pdfplumber` into a virtual environment. `extract_other.py` exits with code 2 when there is no `Other Records/` folder. That is normal.
 
 Each script lists files it has not seen before. On a rerun in the same session, pass `--since <YYYY-MM-DD>` to list everything first seen since then. Act on every warning line:
 
@@ -87,7 +87,7 @@ If anything new changes the picture, add a dated paragraph at the top of "Where 
 
 ## 7. Change note
 
-Write `analysis/changes/<YYYY-MM-DD>.md`, adding `-2`, `-3` if one exists for today. The family reads this on a phone. It must run 300 words or fewer and use plain language. It covers:
+Write `analysis/changes/<YYYY-MM-DD>.md`, adding `-2`, `-3` if one exists for today. The family reads this on a phone. It must run 300 words or fewer, not counting the sources and footer, and use plain language. On a first ingest or a large batch, keep to the few findings that matter most and point to the summaries for the rest. Count the words before finishing. It covers:
 
 - what arrived
 - what it says, with numbers, units, and ranges
@@ -113,7 +113,7 @@ If `panel/panel.md` exists and a new service or organ system has entered the cas
 
 - For each source folder, the number of PDFs on disk must equal the manifest row count and the text file count. If they differ, find out why.
 - Check every number you wrote in a summary or change note against the text file of the PDF it came from, never against the trend table or an index.
-- Every `[n]` has a source entry and every entry is cited.
+- Every number in the change note and summaries carries a citation, every `[n]` has a source entry, and every entry is cited.
 
 Report in a few lines: the counts, what arrived, the headline of the change note, and whether a conference is recommended.
 

@@ -46,7 +46,7 @@ Ask in one message, and say every item is optional except how to refer to the pa
 - Outpatient or primary physician.
 - Which patient portal they use.
 
-Write the answers to a temporary JSON file with the keys `PATIENT_LABEL`, `AGE`, `RELATIONSHIP`, `SETTING`, `FACILITY`, `START_DATE`, `REASON`, `ATTENDING`, `OUTPATIENT`, `PORTAL`.
+Write the answers to `.advisor/facts.json` inside the case folder (create `.advisor/` first) with the keys `PATIENT_LABEL`, `AGE`, `RELATIONSHIP`, `SETTING`, `FACILITY`, `START_DATE`, `REASON`, `ATTENDING`, `OUTPATIENT`, `PORTAL`.
 
 ## 3. Ask for the private identifiers
 
@@ -59,10 +59,10 @@ Ask for the patient's full legal name and nicknames, date of birth, medical reco
 Run from anywhere:
 
 ```
-python3 "${CLAUDE_SKILL_DIR}/scripts/scaffold.py" --root "<case folder>" --facts "<facts.json>"
+python3 "${CLAUDE_SKILL_DIR}/scripts/scaffold.py" --root "<case folder>" --facts "<case folder>/.advisor/facts.json"
 ```
 
-The script creates every folder and starting file listed in `assets/case-folder-layout.md`, fills the templates, and never overwrites an existing file. On a repair, leave out `--facts`. Delete the temporary facts file afterward.
+The script creates every folder and starting file listed in `assets/case-folder-layout.md`, fills the templates, and never overwrites an existing file. On a repair, leave out `--facts`. Delete `.advisor/facts.json` afterward.
 
 Then write the identifiers to `.advisor/identifiers.txt`, one per line. On a repair, append only new entries.
 

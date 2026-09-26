@@ -10,7 +10,12 @@ Care Team Notes/
 Other Records/
 .advisor/
 *.pdf
+# Synthetic fixtures are the only exception
+!tests/fixtures/*/Test Results/
+!tests/fixtures/*/Care Team Notes/
+!tests/fixtures/*/Other Records/
 !tests/fixtures/**/*.pdf
+!tests/fixtures/**/*.PDF
 
 # OS and tooling
 .DS_Store
@@ -20,4 +25,4 @@ __pycache__/
 .venv/
 .ruff_cache/
 node_modules/
-evals/**/results*.json
+evals/results/
