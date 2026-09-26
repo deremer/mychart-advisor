@@ -1,0 +1,23 @@
+# Real-case reference material. NEVER commit.
+docs/input/
+
+# Local denylist of real-case identifiers used by the guard script. NEVER commit.
+.case-denylist
+
+# Any real patient data that lands here by mistake
+Test Results/
+Care Team Notes/
+Other Records/
+.advisor/
+*.pdf
+!tests/fixtures/**/*.pdf
+
+# OS and tooling
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.ruff_cache/
+node_modules/
+evals/**/results*.json
