@@ -1,0 +1,17 @@
+{
+  "description": "mychart-advisor privacy guard: blocks web searches and fetches that contain a case identifier.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "WebSearch|WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/phi_web_guard.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

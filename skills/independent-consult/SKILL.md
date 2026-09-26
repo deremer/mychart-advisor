@@ -96,6 +96,8 @@ After each unit returns, do three things:
 
 Merge the investigators' rows into `snapshot/work/ledger.json`, and update `progress.md`.
 
+When the `consult-blind` workflow runs this stage instead, it returns every unit's output and the merged ledger. Save each to `snapshot/work/` as above, and check the returned `urgent` count before moving on. `consult-synthesis` likewise returns the reconciliation, the report, and the verification issues for you to save.
+
 ### 6. Synthesis stage
 
 1. **Prior analysis.** Assemble `consult/<date>/prior/` by copying in the prior-analysis files the user approved. This folder must not exist until now.
