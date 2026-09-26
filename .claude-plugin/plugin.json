@@ -1,0 +1,13 @@
+{
+  "name": "mychart-advisor",
+  "version": "0.1.0",
+  "description": "Helps patients and families organize exported patient-portal records (Epic MyChart and others), understand test results and notes, track trends, explore the differential, and prepare sharper questions for the care team. Local-first. Does not diagnose or direct care. Not affiliated with Epic Systems.",
+  "author": {
+    "name": "David DeRemer",
+    "url": "https://github.com/deremer"
+  },
+  "homepage": "https://github.com/deremer/mychart-advisor",
+  "repository": "https://github.com/deremer/mychart-advisor",
+  "license": "MIT",
+  "keywords": ["patient", "family", "caregiver", "mychart", "patient-portal", "lab-results", "medical-records", "case-conference", "second-opinion", "health"]
+}
