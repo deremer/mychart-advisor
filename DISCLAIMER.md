@@ -1,7 +1,5 @@
 # Disclaimer
 
-> DRAFT for owner and counsel review before public announcement.
-
 ## What this tool is
 
 mychart-advisor helps patients and families be better informed about their own medical records. It helps them understand what test results and clinical notes mean, follow trends over time, see the possibilities the evidence supports and which tests would settle them, and prepare sharper questions for the care team. It also answers the questions a tool can answer, so the family's limited time with doctors and nurses goes to the questions only those clinicians can answer.
